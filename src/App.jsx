@@ -14,7 +14,7 @@ function App() {
       {/* About Layout: Two Column Services Section */}
       <Layout1 />
 
-      {/* Process Timeline: 7-Step Process */}
+      {/* Why Choose Us Section */}
       <Layout2 />
 
       {/* Contact Section */}

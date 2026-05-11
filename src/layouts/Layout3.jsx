@@ -37,7 +37,7 @@ export function ContactSection() {
               </div>
               <h1 className="text-5xl md:text-5xl font-heading mb-6 leading-[1.1]">
                 Legal Support <br />
-                <h2 className="text-5xl md:text-5xl text-[#C4A46B]">When You Need It.</h2>
+                <h2 className="text-5xl md:text-5xl text-navy-900">When You Need It.</h2>
               </h1>
               <p className="text-sm leading-relaxed max-w-lg">
                 Your legal journey starts with a conversation. We combine traditional values with modern expertise to provide exceptional guidance.
