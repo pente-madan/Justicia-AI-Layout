@@ -2,6 +2,8 @@ import React from 'react';
 import Layout1 from './layouts/Layout1';
 import Layout2 from './layouts/Layout2';
 import Layout3 from './layouts/Layout3';
+import Layout4 from './layouts/Layout4';
+import Layout5 from './layouts/Layout5';
 import './index.css';
 
 /**
@@ -19,6 +21,12 @@ function App() {
 
       {/* Contact Section */}
       <Layout3 />
+
+      {/* Benefits Section */}
+      <Layout4 />
+
+      {/* Legal Service Section */}
+      <Layout5 />
     </div>
   );
 }
