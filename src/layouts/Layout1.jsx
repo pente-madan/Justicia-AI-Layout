@@ -106,20 +106,20 @@ const Layout1 = () => {
 
               {/* 3. Statistics - Horizontal Row */}
               <div 
-                className="grid grid-cols-2 gap-4 md:grid-cols-4"
+                className="grid grid-cols-2 gap-3 md:grid-cols-4"
               >
                 {statistics.map((stat, index) => {
                   const Icon = stat.icon;
                   return (
                     <div 
                       key={index}
-                      className="flex flex-col items-center justify-center rounded-xl bg-navy-900 p-6 text-center"
+                      className="flex flex-col items-center justify-center rounded-xl bg-navy-900 p-3 text-center"
                     >
-                      <Icon className="mb-3 h-8 w-8 text-gold-600" />
-                      <div className="font-heading text-3xl font-bold text-white md:text-4xl">
+                      <Icon className="mb-2 h-5 w-5 text-gold-600" />
+                      <div className="font-heading text-xl font-bold text-white md:text-2xl">
                         {stat.number}
                       </div>
-                      <div className="mt-2 text-sm font-medium text-slate-400 font-sans">
+                      <div className="mt-1 text-xs font-medium text-slate-400 font-sans">
                         {stat.label}
                       </div>
                     </div>
@@ -128,10 +128,10 @@ const Layout1 = () => {
               </div>
 
               {/* 4. Contact Us CTA Button */}
-              <div>
-                <button className="inline-flex h-16 items-center justify-center gap-3 rounded-2xl bg-gold-600 px-10 text-lg font-semibold text-white shadow-xl shadow-gold-600/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-600 focus-visible:ring-offset-2">
+              <div className="mt-28">
+                <button className="group inline-flex h-16 items-center justify-center gap-3 rounded-2xl bg-gold-600 px-10 text-lg font-semibold text-white btn-lift hover:shadow-xl hover:shadow-gold-600/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-600 focus-visible:ring-offset-2">
                   Contact Us
-                  <ArrowRight className="h-5 w-5" />
+                  <ArrowRight className="h-5 w-5 arrow-slide" />
                 </button>
               </div>
 

@@ -82,7 +82,7 @@ const Layout2 = () => {
                 {/* Left Card Column */}
                 {isLeft ? (
                   <div className="card-container-left">
-                    <div className="timeline-card">
+                    <div className="timeline-card hover-gold-glow">
                       <div className="step-header step-header-left">
                         <div className="step-number">
                           {stepNumber}
@@ -110,7 +110,7 @@ const Layout2 = () => {
                 {!isLeft ? (
                   <div className="card-container-right">
                     <div className="connector-right"></div>
-                    <div className="timeline-card">
+                    <div className="timeline-card hover-gold-glow">
                       <div className="step-header step-header-right">
                         <div className="step-number">
                           {stepNumber}
@@ -215,6 +215,11 @@ const Layout2 = () => {
           box-shadow: 0 0 0 3px #d4af37;
           position: relative;
           z-index: 1;
+          transition: box-shadow 0.3s ease;
+        }
+
+        .timeline-row:has(.timeline-card:hover) .timeline-dot {
+          box-shadow: 0 0 15px #d4af37, 0 0 0 3px #d4af37;
         }
 
         .step-header {
