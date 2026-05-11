@@ -3,7 +3,7 @@ import { Gavel, Phone, Mail } from "lucide-react";
 
 const Layout5 = () => {
   return (
-    <section className="relative bg-slate-50 py-24 md:py-36 overflow-hidden" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+    <section className="relative bg-slate-50 py-24 md:py-36 overflow-hidden mt-20" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
       {/* Overlay */}
       <div className="absolute inset-0 bg-navy-900/80"></div>
 
