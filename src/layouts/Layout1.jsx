@@ -26,11 +26,11 @@ const Layout1 = () => {
   return (
     <div className="w-full bg-white">
       {/* Two Column Section */}
-      <section className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-slate-50 via-white to-gold-50/20 font-body">
+      <section className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-[var(--color-justitia-light-grey)] via-white to-[var(--color-justitia-accent-light)]/20 py-16 px-4 md:px-8 lg:px-16">
         
         {/* Background Decorative Elements */}
-        <div className="absolute -left-[5%] top-[10%] h-[400px] w-[400px] rounded-full bg-navy-100/20 blur-3xl filter" />
-        <div className="absolute -right-[5%] bottom-[15%] h-[350px] w-[350px] rounded-full bg-gold-100/30 blur-3xl filter" />
+        <div className="absolute -left-[5%] top-[10%] h-[400px] w-[400px] rounded-full bg-[var(--color-justitia-navy)]/10 blur-3xl filter" />
+        <div className="absolute -right-[5%] bottom-[15%] h-[350px] w-[350px] rounded-full bg-[var(--color-justitia-accent)]/30 blur-3xl filter" />
 
         {/* Main Container */}
         <div className="container mx-auto px-4 py-8 md:px-6 lg:py-12">
@@ -41,7 +41,7 @@ const Layout1 = () => {
               className="relative h-[600px] w-full lg:h-[700px]"
             >
               {/* Image Container with decorative frame */}
-              <div className="group relative h-full w-full overflow-hidden rounded-3xl bg-navy-900 shadow-2xl shadow-navy-900/30">
+              <div className="group relative h-full w-full overflow-hidden rounded-2xl bg-[var(--color-justitia-navy)] shadow-xl">
                 {/* Main Image - Legal/Justice Theme */}
                 <img
                   src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop"
@@ -49,16 +49,13 @@ const Layout1 = () => {
                   className="h-full w-full object-cover object-center opacity-90"
                 />
                 
-                {/* Overlay Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-navy-900/60 via-navy-900/20 to-transparent" />
-                
-                {/* Gold Border Accent */}
-                <div className="absolute inset-0 rounded-3xl ring-2 ring-gold-600/20" />
+                {/* Accent Border */}
+                <div className="absolute inset-0 rounded-2xl ring-2 ring-[var(--color-justitia-accent)]/20" />
               </div>
 
-              {/* Decorative Gold Element */}
-              <div className="absolute -bottom-8 -left-8 -z-10 h-48 w-48 rounded-full bg-gold-600/10 blur-2xl" />
-              <div className="absolute -right-8 -top-8 -z-10 h-64 w-64 rounded-full bg-navy-900/5 blur-3xl" />
+              {/* Decorative Accent Element */}
+              <div className="absolute -bottom-8 -left-8 -z-10 h-48 w-48 rounded-full bg-[var(--color-justitia-accent)]/10 blur-2xl" />
+              <div className="absolute -right-8 -top-8 -z-10 h-64 w-64 rounded-full bg-[var(--color-justitia-navy)]/5 blur-3xl" />
             </div>
 
             {/* RIGHT COLUMN - Content */}
@@ -66,14 +63,14 @@ const Layout1 = () => {
 
               {/* Section Label */}
               <div>
-                <h1 className="font-heading text-[34px] font-bold text-navy-900">
+                <h1 className="font-['Signika',Helvetica,Arial,Lucida,sans-serif] text-4xl md:text-5xl font-bold text-[var(--color-justitia-charcoal)] leading-tight">
                   Justitia Legal
                 </h1>
               </div>
 
               {/* 1. Short Description */}
               <div>
-                <p className="text-sm leading-relaxed text-slate-600">
+                <p className="font-['Poppins',sans-serif] text-base leading-relaxed text-[var(--color-justitia-medium-grey)]">
                   Justitia Legal is a specialist company offering a unique and professional service to insolvency practitioners in the recovery of a range of debts owed by directors of insolvent companies.
                 </p>
               </div>
@@ -82,10 +79,10 @@ const Layout1 = () => {
               <div 
                 className="space-y-4"
               >
-                <h3 className="font-heading text-2xl font-bold text-navy-900">
+                <h3 className="font-['Signika',Helvetica,Arial,Lucida,sans-serif] text-2xl md:text-3xl font-bold text-[var(--color-justitia-charcoal)] leading-tight">
                   Our Services
                 </h3>
-                <p className="text-sm leading-relaxed text-slate-600">
+                <p className="font-['Baloo 2',sans-serif] text-base leading-relaxed text-[var(--color-justitia-medium-grey)]">
                   We provide fast and efficient debt recovery services to Insolvency Practitioners.<br />
                   {/* We assist Office Holders in recovering funds from directors of insolvent companies. */}
                 </p>
@@ -95,10 +92,10 @@ const Layout1 = () => {
                   {services.map((service, index) => (
                     <li 
                       key={index}
-                      className="flex items-start gap-3 text-slate-700"
+                      className="flex items-start gap-3"
                     >
-                      <span className="mt-1.5 flex h-2 w-2 flex-shrink-0 rounded-full bg-gold-600" />
-                      <span className="text-sm leading-relaxed">{service}</span>
+                      <span className="mt-1.5 flex h-2 w-2 flex-shrink-0 rounded-full bg-[var(--color-justitia-navy)]" />
+                      <span className="font-['Baloo 2',sans-serif] text-base leading-relaxed text-[var(--color-justitia-dark-grey)]">{service}</span>
                     </li>
                   ))}
                 </ul>
@@ -106,20 +103,20 @@ const Layout1 = () => {
 
               {/* 3. Statistics - Horizontal Row */}
               <div 
-                className="grid grid-cols-2 gap-3 md:grid-cols-4"
+                className="grid grid-cols-2 gap-4 md:grid-cols-4"
               >
                 {statistics.map((stat, index) => {
                   const Icon = stat.icon;
                   return (
                     <div 
                       key={index}
-                      className="flex flex-col items-center justify-center rounded-xl bg-navy-900 p-3 text-center"
+                      className="flex flex-col items-center justify-center rounded-2xl bg-[var(--color-justitia-navy)] p-3 md:p-4 text-center shadow-md"
                     >
-                      <Icon className="mb-2 h-5 w-5 text-gold-600" />
-                      <div className="font-heading text-xl font-bold text-white md:text-2xl">
+                      <Icon className="mb-2 h-4 w-4 text-[var(--color-justitia-accent-light)]" />
+                      <div className="font-['Signika',Helvetica,Arial,Lucida,sans-serif] text-lg font-bold text-white md:text-xl">
                         {stat.number}
                       </div>
-                      <div className="mt-1 text-xs font-medium text-slate-400 font-sans">
+                      <div className="mt-1 text-xs font-['Baloo 2',sans-serif] font-medium text-white/70">
                         {stat.label}
                       </div>
                     </div>
@@ -128,8 +125,8 @@ const Layout1 = () => {
               </div>
 
               {/* 4. Contact Us CTA Button */}
-              <div className="mt-28">
-                <button className="group inline-flex h-16 items-center justify-center gap-3 rounded-2xl bg-gold-600 px-10 text-lg font-semibold text-white btn-lift hover:shadow-xl hover:shadow-gold-600/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-600 focus-visible:ring-offset-2">
+              <div className="mt-44">
+                <button className="bg-[var(--color-justitia-navy)] hover:bg-[var(--color-justitia-navy-light)] active:bg-[var(--color-justitia-navy-dark)] text-white font-['Signika',Helvetica,Arial,Lucida,sans-serif] font-semibold text-sm tracking-wide px-8 py-4 rounded-full shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[var(--color-justitia-accent)] focus:ring-offset-2 inline-flex items-center gap-3">
                   Contact Us
                   <ArrowRight className="h-5 w-5 arrow-slide" />
                 </button>

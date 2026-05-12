@@ -1,32 +1,101 @@
-/* Justitia Legal Theme Tokens */
-
+/* Justizia Law Brand Theme Tokens - Updated Color Palette */
+ 
 :root {
-  /* Primary Colors */
-  --color-navy-primary: #1a2332;
-  --color-navy-rgb: 26, 35, 50;
+  /* Primary Brand Colors - Deep Navy Blue */
+  --color-justitia-navy: #00035b;
+  --color-justitia-navy-rgb: 0, 3, 91;
   
-  --color-charcoal: #2b2d42;
-  --color-charcoal-rgb: 43, 45, 66;
-
-  /* Accent Colors */
-  --color-gold: #d4af37;
-  --color-gold-rgb: 212, 175, 55;
+  --color-justitia-navy-light: #0a0a8f;
+  --color-justitia-navy-light-rgb: 10, 10, 143;
   
-  --color-copper: #b8860b;
-  --color-copper-rgb: 184, 134, 11;
-
-  /* Neutral Colors */
-  --color-white: #ffffff;
-  --color-light-grey: #f5f5f7;
-  --color-medium-grey: #8a8a8f;
-  --color-dark-grey: #333333;
-
-  /* Semantic Colors */
-  --color-success: #2ecc71;
-  --color-warning: #e74c3c;
-  --color-info: #3498db;
-
-  /* Spacing Scale */
+  --color-justitia-navy-dark: #000245;
+  --color-justitia-navy-dark-rgb: 0, 2, 69;
+ 
+  /* Accent Colors - Soft Light Blue */
+  --color-justitia-accent: #bfd2e7;
+  --color-justitia-accent-rgb: 191, 210, 231;
+  
+  --color-justitia-accent-dark: #97b3d4;
+  --color-justitia-accent-dark-rgb: 151, 179, 212;
+  
+  --color-justitia-accent-light: #dce7f3;
+  --color-justitia-accent-light-rgb: 220, 231, 243;
+ 
+  /* Secondary Accent - Warm Beige/Cream */
+  --color-justitia-beige: #d3d0bf;
+  --color-justitia-beige-rgb: 211, 208, 191;
+  
+  --color-justitia-beige-dark: #b8b5a5;
+  --color-justitia-beige-dark-rgb: 184, 181, 165;
+  
+  --color-justitia-beige-light: #e8e6dc;
+  --color-justitia-beige-light-rgb: 232, 230, 220;
+ 
+  /* Neutral Colors - Clean Professional Palette */
+  --color-justitia-white: #ffffff;
+  --color-justitia-white-rgb: 255, 255, 255;
+  
+  --color-justitia-neutral: #f5f5f5;
+  --color-justitia-neutral-rgb: 245, 245, 245;
+  
+  --color-justitia-light-grey: #f7f8fa;
+  --color-justitia-light-grey-rgb: 247, 248, 250;
+  
+  --color-justitia-medium-grey: #6b7280;
+  --color-justitia-medium-grey-rgb: 107, 114, 128;
+  
+  --color-justitia-dark-grey: #1f2937;
+  --color-justitia-dark-grey-rgb: 31, 41, 55;
+  
+  --color-justitia-charcoal: #111827;
+  --color-justitia-charcoal-rgb: 17, 24, 39;
+ 
+  /* Semantic Colors - Functional States */
+  --color-success: #10b981;
+  --color-success-rgb: 16, 185, 129;
+  
+  --color-warning: #f59e0b;
+  --color-warning-rgb: 245, 158, 11;
+  
+  --color-error: #ef4444;
+  --color-error-rgb: 239, 68, 68;
+  
+  --color-info: #3b82f6;
+  --color-info-rgb: 59, 130, 246;
+ 
+  /* Contextual Brand Colors */
+  --color-primary: var(--color-justitia-navy);
+  --color-primary-rgb: var(--color-justitia-navy-rgb);
+  
+  --color-accent: var(--color-justitia-accent);
+  --color-accent-rgb: var(--color-justitia-accent-rgb);
+  
+  --color-secondary: var(--color-justitia-beige);
+  --color-secondary-rgb: var(--color-justitia-beige-rgb);
+  
+  --color-background: var(--color-justitia-white);
+  --color-background-rgb: var(--color-justitia-white-rgb);
+  
+  --color-surface: var(--color-justitia-neutral);
+  --color-surface-rgb: var(--color-justitia-neutral-rgb);
+  
+  --color-text-primary: var(--color-justitia-dark-grey);
+  --color-text-primary-rgb: var(--color-justitia-dark-grey-rgb);
+  
+  --color-text-secondary: var(--color-justitia-medium-grey);
+  --color-text-secondary-rgb: var(--color-justitia-medium-grey-rgb);
+  
+  /* Border & UI Element Colors */
+  --color-border: #d1d5db;
+  --color-border-rgb: 209, 213, 219;
+  
+  --color-border-light: #e5e7eb;
+  --color-border-light-rgb: 229, 231, 235;
+  
+  --color-hover-bg: #f3f4f6;
+  --color-hover-bg-rgb: 243, 244, 246;
+ 
+  /* Spacing Scale - Preserved */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
@@ -34,24 +103,40 @@
   --spacing-xl: 2rem;
   --spacing-2xl: 3rem;
   --spacing-3xl: 4rem;
-
-  /* Border Radius */
+ 
+  /* Border Radius - Preserved */
   --radius-sm: 0.375rem;
   --radius-md: 0.5rem;
   --radius-lg: 0.875rem;
   --radius-xl: 1rem;
   --radius-2xl: 1.5rem;
   --radius-full: 9999px;
-
-  /* Shadows */
+ 
+  /* Shadows - Updated with Justizia Colors */
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
   --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.10), 0 10px 10px rgba(0, 0, 0, 0.04);
-  --shadow-gold: 0 0 30px rgba(212, 175, 55, 0.2);
-
-  /* Transitions */
+  --shadow-accent: 0 0 30px rgba(191, 210, 231, 0.25);
+  --shadow-navy: 0 0 40px rgba(3, 3, 90, 0.15);
+ 
+  /* Transitions - Preserved */
   --transition-fast: 150ms;
   --transition-base: 300ms;
   --transition-slow: 500ms;
+ 
+  /* Opacity Levels */
+  --opacity-light: 0.1;
+  --opacity-medium: 0.5;
+  --opacity-heavy: 0.8;
+}
+ 
+/* Dark Mode Support (Optional) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--color-justitia-navy-dark);
+    --color-surface: var(--color-justitia-navy);
+    --color-text-primary: var(--color-justitia-off-white);
+    --color-text-secondary: var(--color-justitia-light-grey);
+  }
 }

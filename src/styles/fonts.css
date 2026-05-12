@@ -1,13 +1,13 @@
 /* Justitia Legal Font Imports */
 
-/* Primary Font - Amiri (Headings) */
-@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+/* Primary Font - Signika (Headings & CTA) */
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;500;600;700&display=swap');
 
-/* Secondary Font - Poppins (Body) */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* Secondary Font - Baloo 2 (Body & Content) */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
 
 /* Font Family Variables */
 :root {
-  --font-heading: 'Amiri', serif;
-  --font-body: 'Poppins', sans-serif;
+  --font-heading: 'Signika', Helvetica, Arial, Lucida, sans-serif;
+  --font-body: 'Baloo 2', sans-serif;
 }
