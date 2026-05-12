@@ -59,7 +59,7 @@ const Layout1 = () => {
             </div>
 
             {/* RIGHT COLUMN - Content */}
-            <div className="relative z-10 flex flex-col justify-center space-y-4">
+            <div className="relative z-10 flex flex-col justify-center space-y-6">
 
               {/* Section Label */}
               <div>
